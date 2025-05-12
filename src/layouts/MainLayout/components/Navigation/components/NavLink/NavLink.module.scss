@@ -1,0 +1,13 @@
+.link {
+  font-size: 28px;
+  line-height: 1;
+  text-transform: capitalize;
+
+  @media (max-width: 768px) {
+    font-size: 20px;
+  }
+
+  &.active {
+    color: #3030a8;
+  }
+}

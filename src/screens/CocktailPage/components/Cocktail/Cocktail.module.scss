@@ -1,0 +1,43 @@
+.cocktail {
+  display: flex;
+  gap: 8px;
+
+  @media (max-width: 1024px) {
+    flex-direction: column;
+  }
+}
+
+.info {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.image {
+  width: 50%;
+  height: auto;
+  object-fit: cover;
+}
+
+.heading {
+  font-size: 36px;
+  text-transform: capitalize;
+}
+
+.description {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.instructions {
+  margin-top: 16px;
+}
+
+.measures {
+  margin-top: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}

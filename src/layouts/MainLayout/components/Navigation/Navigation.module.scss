@@ -1,0 +1,25 @@
+.navigation {
+  padding: 16px;
+  background: aquamarine;
+  border-right: 1px solid darkslateblue;
+  height: 100%;
+
+  @media (max-width: 768px) {
+    border-right: none;
+    border-bottom: 1px solid darkslateblue;
+  }
+}
+
+.list {
+  height: 100%;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+
+  @media (max-width: 768px) {
+    flex-direction: row;
+    align-items: center;
+    overflow-x: scroll;
+  }
+}
