@@ -4,10 +4,12 @@ import { CocktailCode } from '@/types';
 import { CocktailPage } from '@/screens';
 
 interface CocktailPageProps {
-  params: { cocktailCode: string };
+  params: Promise<{ cocktailCode: string }>;
 }
 
-export default function Page({ params: { cocktailCode } }: CocktailPageProps) {
+export default async function Page({ params }: CocktailPageProps) {
+  const { cocktailCode } = await params;
+
   const cocktail: CocktailCode = isCocktail(cocktailCode) ? cocktailCode : COCKTAILS_LIST[0];
 
   return <CocktailPage cocktail={cocktail} />;
